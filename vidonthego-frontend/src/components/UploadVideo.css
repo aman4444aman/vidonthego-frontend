@@ -1,0 +1,21 @@
+.upload-container {
+  margin-top: 2rem;
+}
+
+.upload-input {
+  margin: 1rem 0;
+}
+
+.upload-button {
+  background-color: #c8bfae;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.upload-button:hover {
+  background-color: #b2a78d;
+}

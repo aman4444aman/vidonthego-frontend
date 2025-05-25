@@ -1,0 +1,21 @@
+.controls-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mode-button {
+  background-color: #e5ddc5;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mode-button.active {
+  background-color: #a58e6f;
+  color: #fff;
+}
