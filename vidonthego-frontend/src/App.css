@@ -1,6 +1,98 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: #f5f1e6;
-  color: #333;
+  background-image: url('../public/ai-background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #e0f7fa;
+}
+
+h1, h2, h3 {
+  color: #4fd3ff;
+}
+
+button {
+  background-color: #00eaff;
+  color: #000;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+}
+
+button:hover {
+  background-color: #4fd3ff;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.5);
+}
+
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+@media (max-width: 600px) {
+  .upload-button,
+  .mode-button {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .playback-mode {
+    font-size: 1rem;
+  }
+
+  .playback-video {
+    max-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .chapter-list {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .chapter-list button {
+    width: 100%;
+  }
+
+  .upload-button,
+  .mode-button {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+
+  .react-h5-audio-player {
+    width: 100% !important;
+  }
+}
+@media (max-width: 600px) {
+  .mode-button {
+    width: 80px;
+    height: 80px;
+    font-size: 0.75rem;
+  }
 }

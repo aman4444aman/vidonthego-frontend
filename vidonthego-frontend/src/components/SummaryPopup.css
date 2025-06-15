@@ -1,0 +1,32 @@
+.summary-popup {
+  position: fixed;
+  right: 1rem;
+  top: 20%;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid #00eaff;
+  padding: 1rem;
+  width: 300px;
+  color: #fff;
+  border-radius: 10px;
+  z-index: 999;
+  box-shadow: 0 0 15px rgba(0, 234, 255, 0.3);
+}
+
+.summary-popup h3 {
+  color: #00eaff;
+  margin-bottom: 0.5rem;
+}
+
+.summary-popup p {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
+
+.close-btn {
+  background: none;
+  color: #fff;
+  border: none;
+  float: right;
+  font-size: 1.2rem;
+  cursor: pointer;
+}

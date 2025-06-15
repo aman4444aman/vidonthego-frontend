@@ -1,0 +1,64 @@
+.narration-controls {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.mode-switch {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.mode-switch button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: black;
+  color: #00eaff;
+  border: 2px solid #00eaff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  line-height: 1.1;
+  box-shadow: 0 0 8px rgba(0, 234, 255, 0.4);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* ✨ Hover only keeps mild glow */
+.mode-switch button:hover {
+  background-color: black;
+  color: #00eaff;
+  box-shadow: 0 0 10px rgba(0, 234, 255, 0.5);
+  transform: none;
+}
+
+/* ✨ Active state glow */
+.mode-switch button.active {
+  border-color: #00f7ff;
+  color: #00f7ff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.narration-options {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: #eee;
+}
+
+.narration-options select {
+  margin-left: 0.5rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #111;
+  color: #00eaff;
+  border: 1px solid #00eaff;
+}

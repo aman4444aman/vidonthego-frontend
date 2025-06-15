@@ -1,21 +1,47 @@
 .upload-container {
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(79, 211, 255, 0.15);
+  backdrop-filter: blur(6px);
 }
 
 .upload-input {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 .upload-button {
-  background-color: #c8bfae;
-  color: #fff;
+  background-color: #00eaff;
+  color: #000;
   border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border-radius: 10px;
   font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
 .upload-button:hover {
-  background-color: #b2a78d;
+  background-color: #4fd3ff;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.5);
 }
+
+.glass-card {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 24px rgba(79, 211, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+

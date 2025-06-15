@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './UploadVideo.css';
+import { FaUpload } from 'react-icons/fa'; // ✅ Import icon here
+import './UploadVideo.css'; //  ✅ Import CSS for styling
 
 function UploadVideo({ onUpload }) {
   const [file, setFile] = useState(null);
@@ -15,11 +16,19 @@ function UploadVideo({ onUpload }) {
   };
 
   return (
-    <div className="upload-container">
-      <input type="file" accept="video/*" onChange={handleFileChange} className="upload-input" />
-      <button onClick={handleUpload} className="upload-button">Upload</button>
-    </div>
-  );
+  <div className="upload-container glass-card fade-in">
+    <input
+      type="file"
+      accept="video/*"
+      className="upload-input"
+      onChange={handleFileChange}
+    />
+    <button className="upload-button" onClick={handleUpload}>
+      <FaUpload /> Upload
+    </button>
+  </div>
+ );
+
 }
 
 export default UploadVideo;

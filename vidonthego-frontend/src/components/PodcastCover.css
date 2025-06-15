@@ -1,0 +1,28 @@
+.podcast-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.podcast-cover img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.podcast-cover h2 {
+  color: #00eaff;
+  margin-bottom: 0.5rem;
+}
+
+.podcast-cover p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
